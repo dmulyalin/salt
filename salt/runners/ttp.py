@@ -174,10 +174,9 @@ try:
     from ttp import ttp
 
     HAS_TTP = True
-except ModuleNotFoundError:
-    HAS_TTP = False
 except ImportError:
     HAS_TTP = False
+
 log = logging.getLogger(__name__)
 
 __virtualname__ = "ttp"
